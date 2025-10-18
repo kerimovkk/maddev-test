@@ -27,6 +27,21 @@ sudo apt-get install -y libwebkit2gtk-4.1-dev libgtk-3-dev build-essential pkg-c
 git clone https://github.com/kerimovkk/maddev-test.git
 cd maddev-test
 
+# Build (installs dependencies and compiles)
+./build.sh
+
+# Run
+./main
+```
+
+### Manual Build
+
+If you prefer to build manually:
+
+```bash
+# Install dependencies
+sudo apt-get install -y libwebkit2gtk-4.1-dev libgtk-3-dev build-essential pkg-config
+
 # Build
 go build -o main main.go
 
